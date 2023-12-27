@@ -2,7 +2,7 @@
 
 ### Source Files
 * [Java](./java_src/BasicInheritance.java)
-* [Go](./go_src/basic_inheritance.go)
+* [Go](./go_src/basicinheritance.go)
 
 ### Java
 
@@ -16,3 +16,11 @@ Go does not support classic inheritance. Instead, it uses struct embedding and i
 - A `Car` struct is created as a generic car, implementing the `Vehicle` interface by providing `VehicleType` and `Brand` methods. In Go, interface implementation is implicit: any struct that has the required methods is considered to implement the interface.
 - `Porsche` and `Audi` structs are then defined, each embedding `Car`. This embedding allows them to inherit `Car`'s methods and properties.
 - Both `Porsche` and `Audi` introduce a `Speed` method and provide their own implementations of the `Brand` method, effectively overriding the `Car`'s `Brand` method. This is an example of how Go utilizes composition and method redefinition in place of classic inheritance.
+
+## Abstract Classes
+
+### Source Files
+* [Java](./java_src/AbstractClass.java)
+* [Go](./go_src/abstractClass.go)
+
+### Java
