@@ -27,8 +27,14 @@ In our example:
 - `Porsche` and `Audi` structs are then defined, each embedding `Car`. This embedding allows them to inherit `Car`'s methods and properties.
 - Both `Porsche` and `Audi` introduce a `Speed` method and provide their own implementations of the `Brand` method, effectively overriding the `Car`'s `Brand` method. This showcases how Go uses composition and method redefinition to achieve a similar outcome to what is typically achieved with classical inheritance.
 
-## Abstract Classes
+# Abstract Classes
 
-### Source Files
+## Source Files
 * [Java](./java_src/AbstractClass.java)
 * [Go](./go_src/abstractClass.go)
+
+### Java
+In Java there are abstract classes. These can not be instantiated and require subclasses to implement their abstract methods.
+
+### Go
+In Go there are no abstract classes and since there is no inheritance struct compositions can implement interfaces even if their parent struct does not (structural Subtyping).
